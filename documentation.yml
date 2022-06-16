@@ -25,13 +25,6 @@ jobs:
       
       - name: Cache
         uses: actions/cache@v2.1.6
-        with:
-          # A list of files, directories, and wildcard patterns to cache and restore
-          path: |
-            ~/.cache/pip3
-            /usr/bin/pandoc
-          # An explicit key for restoring and saving the cache
-          key: ${{ runner.os }}-dependencies
 
       # Runs a single command using the runners shell
       - name: Install dependecies
